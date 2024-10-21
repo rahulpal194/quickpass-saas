@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fonts/typography/plus-JAKARTA-SANS/PlusJakartaSans.css">
+  <link href="./css/style.css" rel="stylesheet">
+
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+    <header class="container ">
+        <div class="py-4">
+            <div class="flex justify-between items-center h-12">
+                <a href="./index.html" class="w-28"><img src="./images/logo.png" alt="logo" class="w-full"></a> 
+                <nav class="hidden lg:flex items-center gap-x-6 font-medium text-base">
+                    <a href="#" class="hover:text-primary">Home</a>
+                    <a href="./return_details.html" class="hover:text-primary ">Features</a>
+                    <a href="#" class="hover:text-primary ">How it works</a>      
+                    <a href="./return_details.html" class="hover:text-primary ">Pricing</a>
+                    <a href="#" class="hover:text-primary ">FAQ</a>      
+                </nav>
+                <div class="hidden lg:flex gap-4 items-center">
+                    <a href="./login.html" class="text-gradient flex items-center justify-center border border-secondary  rounded-[28px] px-8 h-12  text-base font-bold">Login</a>
+                    <a href="./login.html" class="bg-gradient px-8 h-12 flex items-center justify-center  rounded-[28px]  text-white  text-base font-bold">Sign Up</a>
+                </div>
+                <div id="open-sidebar" class="text-3xl cursor-pointer lg:hidden open-sidebar-button text-primary p-1 bg-primary rounded-md">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>     
+     </header>
+
+
+
+     <aside id="sidebar" class="fixed inset-0 z-50 w-screen h-screen invisible opacity-0 bg-black/50 transition-all duration-300 ease-in-out">
+        <div class="w-72 h-screen bg-white transition-all duration-300 -translate-x-full">
+                <div class="flex justify-between items-start p-4">
+                    <a href="./index.html" class="w-28"><img src="./images/header/logo.png" alt="logo" class="w-full"></a> 
+                    <span class="cursor-pointer ml-28 lg:hidden text-primary block" id="close-sidebar">
+                        <i class="fa-regular fa-circle-xmark"> close</i>
+                    </span>
+                </div>
+                <hr class="w-full h-[1px] bg-[#d4d4d4]">
+                <div class="p-2.5 w-full ">
+                    <ul class="flex flex-col text-[18px]">
+                        <li class="w-full py-2 px-2 hover:bg-primary rounded-md hover:text-white mb-2"><a href="#">Have Appointment</a></li>
+                        <li class="w-full py-2 px-2 hover:bg-primary rounded-md hover:text-white mb-2"><a href="./return_details.html">Been Here Before</a></li>
+                        <li class="w-full py-2 px-2 hover:bg-primary rounded-md hover:text-white mb-2"><a href="#">Check Out</a></li>
+                    </ul>
+                    <div class="dropdown py-2 px-2 mb-2">
+                    <button class="dropdownbtn w-full flex items-center gap-2 rounded-3xl capitalize text-sm font-medium text-heading transition-all duration-300 ease-in-out">
+                        <img id="current-flag" src="./images/flag/united-states.png" alt="Current Flag" class="w-6 h-6 rounded-full"> 
+                        <span id="current-lang" class="flex-auto text-left whitespace-nowrap font-semibold text-lg">English</span>
+                        <i class="ms-1 fa-solid fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="dropdown-content min-w-[180px] rounded-lg lg:shadow-xl z-10 border-3 hidden pt-4 px-4">
+                        <li  class=" py-1.5 rounded-md cursor-pointer hover:bg-gray-100 list-none">
+                            <a href="#" data-lang="english" data-flag="./images/flag/united-states.png" class="flex items-center gap-2 font-semibold text-lg"> <img src="./images/flag/united-states.png" class="w-6 h-6 rounded-full" alt="English"> <span>English</span></a>  
+                        </li>
+                        <li  class=" py-1.5 rounded-md cursor-pointer hover:bg-gray-100 list-none">
+                            <a href="#" data-lang="arabic" data-flag="./images/flag/saudi-arabia.png" class="flex items-center gap-2 font-semibold text-lg"> <img src="./images/flag/saudi-arabia.png" class="w-6 h-6 rounded-full" alt="Arabia"><span>Arabia</span></a>                            
+                        </li>
+                    </ul>
+                    </div> 
+                    <a href="./login.html"><button class="bg-primary text-white rounded-md px-6 py-3 leading-tight w-full">Login</button></a>
+                </div>
+        </div>
+    </aside>
+
+
+    <section class="py-16 bg-herobg bg-center bg-no-repeat sm:bg-auto bg-cover">
+        <div class="container ">
+            <div class="max-w-[742px] w-full mx-auto">
+                <h2 class="text-4xl font-bold text-center w-full mb-6">Transform <span class="text-gradient">Visitor Experience</span> with Our Powerful Digital Solution</h2>
+                <p class="text-center text-base font-medium mb-6">Simplify your visitor experience with our smart, secure, and efficient visitor pass management solution. Track, manage, and streamline visitor access in real-time. Elevate your office security and compliance with ease.</p>
+            </div>
+            <div class="flex w-full justify-center gap-4 items-center mb-12">
+                <a href="./login.html" class="bg-gradient px-8 h-12 flex items-center justify-center  rounded-[28px]  text-white  text-base font-bold">Get Started</a>
+                <a href="./login.html" class="text-gradient flex items-center justify-center border border-secondary  rounded-[28px] px-8 h-12  text-base font-bold">See Demo</a>
+            </div>
+            <div class="mx-14 mb-10 drop-shadow-hero">
+                <img class="" src="./images/hero/hero.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+ 
+</body>
+</html>
