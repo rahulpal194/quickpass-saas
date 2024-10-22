@@ -8,9 +8,8 @@
         --secondary :#AD00FF ;
         --client-font : 'Plus Jakarta Sans',sans-serif;  
     }
-    body { @apply font-client}
-    hr{@apply border-none}
-    button{ @apply leading-none}
+    body { @apply font-client text-[#0A183F]}
+    p{@apply text-[#515A74]}
   }
 
   @layer components{
@@ -33,11 +32,20 @@
   .col-11 { @apply w-5/6 p-3 }
   .col-12 { @apply w-full p-3 }
 
-  .hamburger{@apply w-7 h-[2px] bg-gradient my-1}
+  .hamburger{@apply w-6 h-[2px] bg-white my-1}
   .sidebar-active {@apply !opacity-100 !visible}
   .sidebar-active > div {@apply !translate-x-0 }
+  #open-sidebar{@apply bg-gradient}
 
-  .text-gradient { @apply  bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text}
-  .bg-gradient{ @apply bg-gradient-to-r from-primary to-secondary}  
+  .text-gradient { @apply  bg-gradient-to-250 from-primary to-secondary text-transparent bg-clip-text}
+  .bg-gradient{ @apply bg-gradient-to-250 from-primary to-secondary}  
+  .swiper-wrapper{@apply mx-6}
+  .inline-flex {
+    cursor: grab;
+}
+
+.inline-flex:active {
+    cursor: grabbing;
+}
 
   }
