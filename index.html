@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./fonts/typography/plus-JAKARTA-SANS/PlusJakartaSans.css">
-  <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./fonts/iconly/iconly.css">
   <link href="./css/style.css" rel="stylesheet">
 
@@ -28,8 +27,8 @@
                     <a href="#" class="hover:text-primary ">FAQ</a>      
                 </nav>
                 <div class="hidden lg:flex gap-4 items-center">
-                    <a href="./login.html" class="text-gradient flex items-center justify-center border border-secondary  rounded-[28px] px-8 h-12  text-base font-bold">Login</a>
-                    <a href="./login.html" class="bg-gradient px-8 h-12 flex items-center justify-center  rounded-[28px]  text-white  text-base font-bold">Sign Up</a>
+                    <a href="./login.html" class="text-secondary hover:text-white bg-white hover:bg-gradient flex items-center justify-center border border-secondary rounded-[28px] px-8 h-12 text-base font-bold transition-all duration-500 ease-in-out">Login</a>
+                    <a href="./login.html" class="bg-gradient hover:text-gradient bg-white hover:bg-gradient px-8 h-12 flex items-center justify-center rounded-[28px] text-white text-base font-bold">Sign Up</a>
                 </div>
                 <div id="open-sidebar" class="text-3xl cursor-pointer lg:hidden open-sidebar-button text-primary p-1 bg-primary rounded-md">
                     <div class="hamburger"></div>
@@ -74,14 +73,14 @@
                HERO PART START   
     =====================================-->
     <section class="py-2 sm:py-16 bg-herobg bg-center bg-no-repeat sm:bg-auto bg-cover">
-        <div class="container ">
+        <div class="container">
             <div class="max-w-[742px] w-full mx-auto">
                 <h2 class="text-3xl sm:text-4xl font-bold text-center w-full mb-6">Transform <span class="text-gradient">Visitor Experience</span> with Our Powerful Digital Solution</h2>
-                <p class="text-center text-sm sm:text-base font-medium mb-6">Simplify your visitor experience with our smart, secure, and efficient visitor pass management solution. Track, manage, and streamline visitor access in real-time. Elevate your office security and compliance with ease.</p>
+                <p class="text-center text-sm sm:text-base font-medium mb-6 text-black">Simplify your visitor experience with our smart, secure, and efficient visitor pass management solution. Track, manage, and streamline visitor access in real-time. Elevate your office security and compliance with ease.</p>
             </div>
             <div class="flex w-full justify-center gap-6 sm:gap-4 items-center mb-12">
                 <a href="./login.html" class="bg-gradient px-8 h-12 flex items-center justify-center  rounded-[28px]  text-white  text-base font-bold">Get Started</a>
-                <a href="./login.html" class="text-gradient flex items-center justify-center border border-secondary  rounded-[28px] px-8 h-12  text-base font-bold">See Demo</a>
+                <a href="./login.html" class="text-secondary hover:text-white bg-transparent hover:bg-gradient flex items-center justify-center border border-secondary  rounded-[28px] px-8 h-12  text-base font-bold transition-all duration-500 ease-in-out">See Demo</a>
             </div>
             <div class="mx-14 mb-10 drop-shadow-hero">
                 <img class="" src="./images/hero/hero.png" alt="">
@@ -156,11 +155,11 @@
     =====================================-->
     <section class="container">
         <div class="max-w-4xl w-full mx-auto text-center mb-16 lg:mb-20">
-            <h3 class="text-4xl font-bold mx-4 mb-4">Streamline <span class="text-gradient">Visitor Check-ins</span> with Full Automation</h3>
+            <h3 class="text-3xl sm:text-4xl font-bold mx-4 mb-4">Streamline <span class="text-gradient">Visitor Check-ins</span> with Full Automation</h3>
             <p class="text-sm sm:text-base font-medium">Our system automates the entire visitor experience—from instant pass generation to real-time check-ins. Gain valuable insights from visitor data, and manage both guests and employees seamlessly, all within one integrated platform.</p>
         </div>
         <div class="mb-20">
-            <div class="row md:flex-row flex-col-reverse gap-y-11">
+            <div class="row md:flex-row flex-col-reverse gap-y-8">
                 <div class="col-12 md:col-6">
                     <div class="flex flex-col justify-center h-full">
                         <h3 class="text-2xl sm:text-3xl font-semibold mb-6">No more standing in line</h3>
@@ -173,7 +172,7 @@
             </div>
         </div>
         <div class="mb-20">
-            <div class="row  gap-y-11">
+            <div class="row  gap-y-8">
                 <div class="col-12 md:col-6 flex justify-center md:justify-start">
                     <img class="w-[430px]" src="./images/description/pcmonitor.png" alt="">
                 </div>
@@ -187,7 +186,7 @@
             </div>
         </div>
         <div class="mb-20">
-            <div class="row md:flex-row flex-col-reverse gap-y-11">
+            <div class="row md:flex-row flex-col-reverse gap-y-8">
                 <div class="col-12 md:col-6">
                     <div class="flex flex-col justify-center h-full">
                         <h3 class="text-3xl font-semibold mb-6">Automated visitor data for better insights</h3>
@@ -200,7 +199,7 @@
             </div>
         </div>
         <div class="mb-[72px] md:mb-32">
-            <div class="row gap-y-11">
+            <div class="row gap-y-8">
                 <div class="col-12 md:col-6 flex justify-center md:justify-start">
                     <img class="w-[430px]" src="./images/description/pcmonitor.png" alt="monitor">
                 </div>
@@ -216,109 +215,223 @@
     <!--====================================
            DESCRIPTION PART END   
     =====================================-->
+
+
+    <!--====================================
+           FEATURES PART START   
+    =====================================-->
     <section class="container">
-        <div class="mb-16 text-center">
-            <h1 class="text-4xl font-bold mb-4">More <span class="text-gradient">Features</span></h1>
-            <p>Discover powerful features that streamline visitor management with automation</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Approvals</h4>
-                <p>Approve or deny entry to your premises based on question responses.</p>
+        <div class="mb-16 sm:mb-36">
+            <div class="mb-8 sm:mb-16 text-center">
+                <h3 class="text-4xl font-bold mb-4">More <span class="text-gradient">Features</span></h3>
+                <p>Discover powerful features that streamline visitor management with automation</p>
             </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/UserCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
-                <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
-                <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Approvals</h4>
-                <p>Approve or deny entry to your premises based on question responses.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/UserCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
-                <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
-                <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Approvals</h4>
-                <p>Approve or deny entry to your premises based on question responses.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/UserCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
-                <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
-                <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Approvals</h4>
-                <p>Approve or deny entry to your premises based on question responses.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/UserCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
-                <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
-                <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Approvals</h4>
-                <p>Approve or deny entry to your premises based on question responses.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/UserCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
-                <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
-                <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Approvals</h4>
-                <p>Approve or deny entry to your premises based on question responses.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/UserCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
-                <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
-            </div>
-            <div class="p-6 shadow-feature rounded-2xl">
-                <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
-                <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
-                <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Approvals</h4>
+                    <p>Approve or deny entry to your premises based on question responses.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/UserCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
+                    <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
+                    <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Approvals</h4>
+                    <p>Approve or deny entry to your premises based on question responses.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/UserCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
+                    <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
+                    <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Approvals</h4>
+                    <p>Approve or deny entry to your premises based on question responses.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/UserCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
+                    <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
+                    <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Approvals</h4>
+                    <p>Approve or deny entry to your premises based on question responses.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/UserCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
+                    <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
+                    <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Approvals</h4>
+                    <p>Approve or deny entry to your premises based on question responses.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/UserCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
+                    <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
+                    <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/VerifiedCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Approvals</h4>
+                    <p>Approve or deny entry to your premises based on question responses.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/UserCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Contactless Check-in</h4>
+                    <p>Allow visitors and employees to check in and out without physically touching the iPad kiosk.</p>
+                </div>
+                <div class="p-6 shadow-feature rounded-2xl">
+                    <img class="mb-6" src="./images/features/ClipboardCheck.png" alt="">
+                    <h4 class="text-xl font-semibold mb-4">Visitor Pre-registration</h4>
+                    <p>Employee or Admin can pre-register visitors and send QR code to visitor’s whatsapp.</p>
+                </div>
             </div>
         </div>
     </section>
-
     <!--====================================
-           DESCRIPTION PART END   
+           FEATURES PART END   
     =====================================-->
 
+
+    <!--====================================
+           BENEFITS PART START   
+    =====================================-->
+    <section class="bg-benefitgradient bg-center bg-no-repeat mb-16 sm:mb-36 bg-cover">
+       <div class="container">
+            <div class="py-12 sm:py-16 overflow-visible flex flex-col justify-center">
+                <h3 class="text-3xl sm:text-4xl text-center font-bold mb-6 sm:mb-12">Manage <span class="text-gradient">Everything</span></h3>
+                <div class="px-5 sm:max-w-[808px] w-full mx-auto  mb-8 sm:mb-16 drop-shadow-benefitdashboard">
+                    <img class="rounded-2xl w-full" src="./images/benefits/dashboard2.png" alt="dashboard">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Track Visitors</h4>
+                        <p class="text-black text-sm font-medium">Through this system it is possible to track visitors,
+                            visitor’s host and get reports of visitors.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Track Employees</h4>
+                        <p class="text-black text-sm font-medium">Through this system it is possible to track employees, attendance and employee’s working report.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3">Simple to Use</h4>
+                        <p class="text-black text-sm font-medium">Manage your employees and visitors very easily with QuickPass.</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+    <!--====================================
+           BENEFITS PART END   
+    =====================================-->
+
+
+    <!--====================================
+           WHY CHOOSE PART START   
+    =====================================-->
+     <section class="container mb-16 sm:mb-36">
+        <h3 class="text-3xl sm:text-4xl text-center font-bold mb-6 sm:mb-24">Why Choose <span class="text-gradient"> QuickPass</span></span></h3>
+        <div class="flex lg:flex-row flex-col justify-between items-center gap-y-14 gap-x-24 mb-8 sm:mb-20">
+            <div class="max-w-md w-full drop-shadow-benefitdashboard">
+                <img src="./images/benefits/dashboard2.png" alt="">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 sm:gap-y-12">
+                <div>
+                    <h4 class="text-xl font-semibold mb-3">Experience</h4>
+                    <p class="text-black text-sm font-normal">The brand-centric and configurable approach enables Veris to birth new experiences for the users.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-3">Efficiency</h4>
+                    <p class="text-black text-sm font-normal">QuickPass offers a powerful suite of product offerings to raise the overall productivity of the organisation.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-3">Privacy</h4>
+                    <p class="text-black text-sm font-normal">The workplace security is strengthened by complying with industry-accepted processes and standards.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-6">
+            <div class="flex flex-col items-center justify-center">
+                <div class="relative flex items-center justify-center">
+                    <img class="mb-2" src="./images/why_choose/location.png" alt="location">
+                    <h3 class="absolute text-4xl font-bold text-[#002793]">1500+</h3>
+                </div>
+                <p class="text-base sm:text-2xl font-medium text-black">Locations</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <div class="relative flex items-center justify-center">
+                    <img class="mb-2" src="./images/why_choose/building.png" alt="building">
+                    <h3 class="absolute text-4xl font-bold text-[#002793]">300+</h3>
+                </div>
+                <p class="text-base sm:text-2xl font-medium text-black">Enterprise</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <div class="relative flex items-center justify-center">
+                    <img class="mb-2" src="./images/why_choose/dribbble.png" alt="dribbble">
+                    <h3 class="absolute text-4xl font-bold text-[#002793]">20+</h3>
+                </div>
+                <p class="text-base sm:text-2xl font-medium text-black">Countries</p>
+            </div>
+        </div>
+     </section>
+     <!--====================================
+            WHY CHOOSE PART END   
+     =====================================-->
+
+
+     <!--====================================
+            FAQ PART START   
+     =====================================-->
+     <section class="container mb-16 sm:mb-36">
+        
+        <div class="border border-[#D9DBE9] w-full p-3 rounded-xl mb-4">
+            <button type="button" class="accordion group text-gray-700 font-bold flex justify-between w-full">
+               <span> Size </span>
+               <i class="icon lab-fill-circle-plus text-base font-semibold transition-all duration-500 group-hover:text-primary"></i>
+            </button>
+            <div style="height:0px;" class="content overflow-hidden transition-all duration-500" >
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa et reiciendis perferendis enim dolorum nihil deserunt at perspiciatis veritatis praesentium.</p>
+           </div>                 
+        </div>
+     </section>
+     <!--====================================
+            FAQ PART START   
+     =====================================-->
+
+
+     
 
 </body>
 </html>

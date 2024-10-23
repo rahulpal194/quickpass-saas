@@ -44,6 +44,30 @@ slidesContainers.forEach((slide) => {
 
 
 
+const accordionBtn = document.querySelectorAll(".accordion");
+accordionBtn.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+       
+        const content = btn.nextElementSibling;
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+            content.style.height = '0px';
+            content.style.margin = "0px 0px 0px 0px"
+            btn.querySelector('.icon').classList.remove('lab-fill-cirlce-minus'); 
+            btn.querySelector('.icon').classList.add('lab-fill-cirlce-plus');
+            btn.querySelector('.icon').classList.add('rotate-180')
+        } else {
+            content.style.height = `${content.scrollHeight}px`;
+            content.style.margin="8px 0px 0px 0px"
+            btn.querySelector('.icon').classList.add('lab-fill-cirlce-minus'); 
+            btn.querySelector('.icon').classList.remove('lab-fill-cirlce-plus');
+            btn.querySelector('.icon').classList.add('-rotate-180')
+        }
+        btn.setAttribute('aria-expanded', !isExpanded);
+    });
+});
+
+
 
 
 

@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1729585422959");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1729585422959") format("woff2"), url("./iconly.woff?1729585422959") format("woff"), url("./iconly.ttf?1729585422959") format("truetype"), url("./iconly.svg?1729585422959#Iconly") format("svg");
+  src: url("./iconly.eot?1729685521617");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1729685521617") format("woff2"), url("./iconly.woff?1729685521617") format("woff"), url("./iconly.ttf?1729685521617") format("truetype"), url("./iconly.svg?1729685521617#Iconly") format("svg");
 }
 
 [class="lab"], [class^="lab-"], [class*=" lab-"] {
@@ -25,4 +25,28 @@
 
 .lab-line-circle-cross:before {
   content: "\e000";
+}
+
+.lab-location:before {
+  content: "\e001";
+}
+
+.lab-calling:before {
+  content: "\e002";
+}
+
+.lab-mail:before {
+  content: "\e003";
+}
+
+.lab-checkmark:before {
+  content: "\e004";
+}
+
+.lab-fill-circle-plus:before {
+  content: "\e005";
+}
+
+.lab-fill-cirlce-minus:before {
+  content: "\e006";
 }
