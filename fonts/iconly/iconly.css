@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1729685521617");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1729685521617") format("woff2"), url("./iconly.woff?1729685521617") format("woff"), url("./iconly.ttf?1729685521617") format("truetype"), url("./iconly.svg?1729685521617#Iconly") format("svg");
+  src: url("./iconly.eot?1729754401377");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1729754401377") format("woff2"), url("./iconly.woff?1729754401377") format("woff"), url("./iconly.ttf?1729754401377") format("truetype"), url("./iconly.svg?1729754401377#Iconly") format("svg");
 }
 
 [class="lab"], [class^="lab-"], [class*=" lab-"] {
@@ -35,7 +35,7 @@
   content: "\e002";
 }
 
-.lab-mail:before {
+.lab-fill-mail:before {
   content: "\e003";
 }
 
@@ -49,4 +49,16 @@
 
 .lab-fill-cirlce-minus:before {
   content: "\e006";
+}
+
+.lab-twitter:before {
+  content: "\e007";
+}
+
+.lab-instagram:before {
+  content: "\e008";
+}
+
+.lab-youtube:before {
+  content: "\e009";
 }

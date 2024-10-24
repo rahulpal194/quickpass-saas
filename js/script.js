@@ -42,6 +42,25 @@ slidesContainers.forEach((slide) => {
     });
 });
 
+//price toggle 
+
+document.querySelector('.year').classList.add('hidden')
+function priceToggle (){
+    var month = document.querySelector('.month');
+    var year = document.querySelector('.year');
+    if (document.getElementById("toggle").checked == true) {
+     document.getElementById('monthly').classList.remove('text-primary')
+     document.getElementById('yearly').classList.add('text-secondary')
+     month.classList.add('hidden');
+    year.classList.remove('hidden');
+   } else {
+     document.getElementById('monthly').classList.add('text-primary')
+     document.getElementById('yearly').classList.remove('text-secondary')
+     month.classList.remove('hidden');
+     year.classList.add('hidden');
+    
+   }
+  }
 
 
 const accordionBtn = document.querySelectorAll(".accordion");
@@ -53,15 +72,15 @@ accordionBtn.forEach((btn) => {
         if (isExpanded) {
             content.style.height = '0px';
             content.style.margin = "0px 0px 0px 0px"
+            btn.classList.remove('text-primary')
             btn.querySelector('.icon').classList.remove('lab-fill-cirlce-minus'); 
             btn.querySelector('.icon').classList.add('lab-fill-cirlce-plus');
-            btn.querySelector('.icon').classList.add('rotate-180')
         } else {
             content.style.height = `${content.scrollHeight}px`;
-            content.style.margin="8px 0px 0px 0px"
+            content.style.margin="22px 0px 0px 0px"
+            btn.classList.add('text-primary')
             btn.querySelector('.icon').classList.add('lab-fill-cirlce-minus'); 
             btn.querySelector('.icon').classList.remove('lab-fill-cirlce-plus');
-            btn.querySelector('.icon').classList.add('-rotate-180')
         }
         btn.setAttribute('aria-expanded', !isExpanded);
     });
