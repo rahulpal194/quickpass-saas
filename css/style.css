@@ -831,16 +831,6 @@ p {
   clear: none;
 }
 
-.mx-14 {
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2236,12 +2226,12 @@ p {
           box-decoration-break: clone;
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
@@ -2273,12 +2263,12 @@ p {
           background-clip: text;
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-repeat {
@@ -2352,6 +2342,10 @@ p {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-6 {
@@ -3368,11 +3362,6 @@ p {
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
-  }
-
-  .lg\:mx-14 {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
   }
 
   .lg\:mx-4 {
